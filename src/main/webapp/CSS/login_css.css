@@ -1,0 +1,23 @@
+
+#style {
+    position: absolute;
+   
+    margin-top: -18%;
+    margin-left: 60%;
+   
+
+    color:black;
+    padding: 35px;
+}
+
+#center {
+    margin-left: 10%;
+    margin-top: 150px;
+    width: 15%;
+    
+    border: 30px solid #1FC4E7;
+    padding: 200px;
+}
+body{
+  
+}

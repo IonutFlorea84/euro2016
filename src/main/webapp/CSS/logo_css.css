@@ -1,0 +1,30 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 20, 2016, 10:18:34 AM
+    Author     : Gabi
+*/
+
+#logoHeader {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 25%;
+    
+   
+    border: 3px solid #1FC4E7;
+    padding: 10px;
+} 
+#logo {
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top:  2%;
+    margin-bottom:  2%;
+    zoom: 20%;
+    
+  
+    
+    
+}
