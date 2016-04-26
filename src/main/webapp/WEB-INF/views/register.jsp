@@ -18,16 +18,13 @@
             <div align="center">
      
         
-        <form name="registerUser" action="register_user_servlet" method="POST">
+        <form name="registerUser" action="register" method="POST">
             <table>
                 <tr> 
                     <td>Username:</td>
                     <td><input type="text" name = "user_id"></td>
                 </tr>
-                <tr> 
-                    <td>Password:</td>
-                    <td><input type="password" name ="password"></td>
-                </tr> 
+                 
                 <tr> 
                     <td>Name</td>
                     <td><input type="text" name = "name"></td>

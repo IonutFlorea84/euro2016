@@ -1,3 +1,5 @@
+package euro2016;
+
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -10,7 +12,7 @@ import java.util.logging.Logger;
 
 
 public class DB_connection {
-    private String db_url = "jdbc:mysql://localhost/euro_2016";
+    private String db_url = "jdbc:mysql://localhost:3306/euro_2016?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
     private String db_password ="root";
     private String db_username="root";
     private String db_name="euro_2016";
@@ -105,4 +107,17 @@ public class DB_connection {
             throw new RuntimeException("Cannot add user to Db", e);
         } 
     }
+      protected  void updateUser(Users user){
+          String query =  "UPDATE " + user_table + " SET password= ?  WHERE  user_id=?";
+          try {
+            statement = connection.prepareStatement(query);
+            statement.setString(1, user.getPassword());
+            statement.setString(2, user.getUser_id());
+            
+             statement.execute();
+          } 
+          catch (Exception e) {
+            throw new RuntimeException("Cannot update password to Db", e);
+        } 
+      }
 }

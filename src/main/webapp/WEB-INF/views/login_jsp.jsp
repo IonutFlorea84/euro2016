@@ -14,7 +14,7 @@
         <div id="style">
             <div align="center">
                 
-                <form name="login_form" action="login_servlet" method="POST">
+                <form name="login" action="login" method="POST">
                     <label style="color: red; font: bold"> ${message}  </label><br>
                     <input type="text" autocompele="off" name = "user_id" placeholder="Username"><br>
                     <input type="password" autocomplete="off" name ="password" placeholder="Password" ><br><br>
